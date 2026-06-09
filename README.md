@@ -31,13 +31,16 @@ Verify the latest commit signature:
 git log --show-signature -1
 ```
 
-## GitLab remote
+## GitHub remote
 
-Create an empty public project named `xsar-website` on GitLab, then:
+Repository: [github.com/xSAR-research/xsar-website](https://github.com/xSAR-research/xsar-website)
 
 ```bash
-git remote add origin git@gitlab.com:<your-username>/xsar-website.git
+git remote add origin git@github.com:xSAR-research/xsar-website.git
 git push -u origin main
 ```
 
-Register your SSH **signing** public key (`~/.ssh/id_ed25519_sk_primary.pub`) in GitLab under **Preferences → SSH Keys** so commits show as verified.
+Register your YubiKey SSH public key in GitHub under **Settings → SSH and GPG keys**:
+
+- **Authentication key** — required for `git push` / `git pull`
+- **Signing key** — required for commits to show as Verified
