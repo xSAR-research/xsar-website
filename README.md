@@ -36,9 +36,11 @@ git log --show-signature -1
 Repository: [github.com/xSAR-research/xsar-website](https://github.com/xSAR-research/xsar-website)
 
 ```bash
-git remote add origin git@github.com:xSAR-research/xsar-website.git
+git remote add origin git@github-xsar:xSAR-research/xsar-website.git
 git push -u origin main
 ```
+
+The `github-xsar` host alias in `~/.ssh/config` routes auth through the xSAR-research YubiKey keys.
 
 Register your YubiKey SSH public key in GitHub under **Settings → SSH and GPG keys**:
 
