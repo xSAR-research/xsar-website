@@ -48,3 +48,5 @@ Register your YubiKey SSH public key in GitHub under **Settings → SSH and GPG 
 - **Signing key** — required for commits to show as Verified
 
 On GitHub, verified commits display a **Verified** badge next to the commit message.
+
+Each GitHub account has primary and secondary YubiKey credentials for signing and authentication.
