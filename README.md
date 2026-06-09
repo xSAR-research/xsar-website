@@ -23,7 +23,7 @@ xsar-website/
 
 ## Git
 
-All commits are SSH-signed with a YubiKey (`sk-ssh-ed25519`). Global git config on this machine handles signing automatically; a YubiKey touch is required at commit time.
+All commits are SSH-signed with a YubiKey (`sk-ssh-ed25519`). Per-repo `user.email` and `user.signingkey` select the AccessIT or xSAR-research identity; a YubiKey touch is required at commit time.
 
 Verify the latest commit signature:
 
