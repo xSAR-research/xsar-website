@@ -1,0 +1,12 @@
+# Internal agent/development files (never part of the public website)
+AGENTS.md
+
+# Local backup of original logo (created during transparency cleanup)
+images/xsar-logo-original.png
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

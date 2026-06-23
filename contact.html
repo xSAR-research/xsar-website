@@ -5,26 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>xSAR — Contact</title>
   <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Tabler Icons (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/xsar-logo.png" alt="xSAR" width="140" height="70">
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+
+      <details class="mobile-nav">
+        <summary class="hamburger" aria-label="Toggle menu">☰</summary>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Contact xSAR</h1>
+
+    <p>If you serve with the SES in Queensland or the Northern Territory, or you support those who do, we would value hearing from you. Your experience on the ground matters more than any idea we might have. Please share your thoughts when it suits you.</p>
+
+    <figure style="max-width: 260px; margin: 1.25rem 0;">
+      <img src="images/Charlie.png" alt="Warm portrait of Charlie, a man with a full grey beard and short receding hair, smiling gently while wearing a brown and white checkered shirt. A small drone is visible through the window in the background." width="260" height="260" style="border-radius: 6px; border: 1px solid var(--color-border);">
+      <figcaption style="font-size: 0.9rem; color: var(--color-muted); margin-top: 0.35rem;">Charlie — Toowoomba</figcaption>
+    </figure>
+
     <form action="https://formspree.io/f/xojzwdge" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <div class="form-field">
+        <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <div class="form-field">
+        <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
+      <div class="form-field">
+        <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
 
-      <button type="submit">Send</button>
+      <!-- Honeypot -->
+      <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" aria-hidden="true">
+
+      <!-- Optional subject -->
+      <input type="hidden" name="_subject" value="xSAR website message">
+
+      <!-- Cloudflare Turnstile (Formspree native integration) -->
+      <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" data-theme="light"></div>
+
+      <button type="submit" class="btn btn-primary">Send message</button>
     </form>
+
+    <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--color-muted);">
+      After sending you will see a confirmation from our form service. Thank you.
+    </p>
   </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>xSAR quietly supports the volunteers of the Queensland and Northern Territory State Emergency Services.</p>
+    <p>© xSAR. Darling Heights, Toowoomba. All rights reserved.</p>
+  </footer>
 </body>
 </html>

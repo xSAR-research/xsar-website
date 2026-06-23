@@ -5,13 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>xSAR — About</title>
   <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Tabler Icons (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main></main>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/xsar-logo.png" alt="xSAR" width="140" height="70">
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <details class="mobile-nav">
+        <summary class="hamburger" aria-label="Toggle menu">☰</summary>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>About xSAR</h1>
+
+    <p>xSAR is a small research effort based in Toowoomba. We look at ideas that could support SES teams across QLD and NT without adding to their load. Everything stays in the background. Our only goal is to honour the skill and commitment of the people who turn up when communities need them most.</p>
+
+    <h2>The volunteers we support</h2>
+    <p>The real strength of the SES lies with ordinary people who train hard and leave home at a moment’s notice. They bring local knowledge, steady hands and genuine care. We hold their service in high regard and keep their daily realities at the centre of anything we consider.</p>
+
+    <h2>How we try to help</h2>
+    <p>We explore tools that might help spot someone sooner or keep teams connected in difficult conditions. Any progress we make belongs to the volunteers who use it. We stay out of the way and focus only on what might genuinely lighten the load for those on the ground.</p>
+
+    <h2>Our approach</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Safety first for volunteers</h3>
+        <p>Nothing we do should ever increase risk to the people on the ground.</p>
+      </div>
+      <div class="card">
+        <h3>Reliability in the field</h3>
+        <p>Ideas only matter if they work when conditions are tough and resources are limited.</p>
+      </div>
+      <div class="card">
+        <h3>Humble service</h3>
+        <p>We are here to support, not lead. The volunteers and the communities they serve come first.</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 2rem;">Thank you to every volunteer who gives their time to the State Emergency Services in Queensland and the Northern Territory. Your courage and generosity keep communities safe. xSAR is simply here to offer quiet, steady support for that work.</p>
+  </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>xSAR quietly supports the volunteers of the Queensland and Northern Territory State Emergency Services.</p>
+    <p>© xSAR. Darling Heights, Toowoomba. All rights reserved.</p>
+  </footer>
 </body>
 </html>

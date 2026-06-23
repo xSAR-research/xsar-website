@@ -5,13 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>xSAR</title>
   <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Tabler Icons (optional, lightweight use) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main></main>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/xsar-logo.png" alt="xSAR" width="140" height="70">
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="desktop-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <details class="mobile-nav">
+        <summary class="hamburger" aria-label="Toggle menu">☰</summary>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <h1>Saving lives one drone at a time.</h1>
+      <p>Volunteers with the Queensland and Northern Territory State Emergency Services give their time freely when floods rise, storms strike or people go missing. They know the country and they answer the call. xSAR works quietly to explore practical help that might stand beside them on the ground. We respect what they do and aim to make their work a little steadier where we can.</p>
+
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href="about.html" class="btn btn-primary">Learn how we support volunteers</a>
+        <a href="contact.html" class="btn btn-secondary">Contact the team</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>How we try to help</h2>
+      <p>Drones give ground teams an extra set of eyes over wide or difficult country. Thermal imaging can detect a heat signature when visibility is poor. This means searchers can spend more time where it matters and less time exposed.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Eyes in the sky</h3>
+          <p>Remotely piloted aircraft can scan large areas quickly and stream live imagery back to command.</p>
+        </div>
+        <div class="card">
+          <h3>Safer for volunteers</h3>
+          <p>Operate in conditions where manned aircraft or foot teams would be delayed or at greater risk.</p>
+        </div>
+        <div class="card">
+          <h3>Quiet support</h3>
+          <p>We stay in the background. Any progress belongs to the volunteers who use it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>xSAR quietly supports the volunteers of the Queensland and Northern Territory State Emergency Services.</p>
+    <p>© xSAR. Darling Heights, Toowoomba. All rights reserved.</p>
+  </footer>
 </body>
 </html>

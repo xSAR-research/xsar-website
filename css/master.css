@@ -1,1 +1,418 @@
-/* xSAR website styles */
+/* xSAR — master.css
+   Desktop-first (default horizontal nav), WCAG AA+, warm dignified palette for QLD/NT SES volunteers.
+   Static HTML5 only. No frameworks.
+   Breakpoints: desktop base → @media (max-width: 40em) hamburger.
+*/
+
+/* 1. CSS Custom Properties — warm trustworthy palette */
+:root {
+  --color-bg: #F8F4EF;
+  --color-surface: #FBF8F3;
+  --color-text: #29231F;
+  --color-muted: #665C54;
+  --color-primary: #E07A3D;   /* warm terracotta-orange */
+  --color-accent: #8B5E3C;   /* earth ochre */
+  --color-cta: #C65D3B;      /* deeper CTA */
+  --color-focus: #1E3A5F;    /* deep navy for focus */
+  --color-success: #4A6B3F;
+  --color-border: #D5CBBE;
+  --color-error: #A14C3F;
+
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius: 4px;
+  --space: 1rem;
+}
+
+/* 2. Reset + base (desktop first) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+/* 3. Typography */
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  color: var(--color-text);
+  margin: 0 0 0.75rem;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--color-cta);
+}
+
+/* 4. Layout */
+header, main, footer {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Header with logo top-left + nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+/* Desktop nav (default) */
+nav[aria-label="Primary"] {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.desktop-nav a[aria-current="page"] {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.desktop-nav a:hover {
+  background-color: var(--color-surface);
+  color: var(--color-cta);
+}
+
+/* Mobile nav (hidden on desktop) */
+.mobile-nav,
+.hamburger {
+  display: none;
+}
+
+/* 5. Components */
+
+/* Hero */
+.hero {
+  padding: 2.5rem 0 2rem;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  max-width: 42rem;
+}
+
+.hero p {
+  max-width: 38rem;
+  font-size: 1.125rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* CTA buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-cta);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #a64d2f;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-surface);
+  border-color: var(--color-cta);
+  color: var(--color-cta);
+}
+
+/* Cards / value sections */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+/* Forms */
+form {
+  max-width: 42rem;
+}
+
+.form-field {
+  margin-bottom: 1.125rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--color-text);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: #fff;
+  color: var(--color-text);
+  min-height: 44px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-color: var(--color-focus);
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  margin-top: 0.5rem;
+}
+
+/* Turnstile container */
+.cf-turnstile {
+  margin: 1rem 0;
+}
+
+/* 6. Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  z-index: 999;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Honeypot */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 7. Responsive: desktop-first (default), collapse nav to hamburger on mobile */
+@media (max-width: 40em) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    min-height: 44px;
+    min-width: 44px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--color-text);
+  }
+
+  .mobile-nav[open] .hamburger {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+  }
+
+  .mobile-nav li + li {
+    margin-top: 0.125rem;
+  }
+
+  .mobile-nav a {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .mobile-nav a[aria-current="page"] {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .hero {
+    padding-top: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+footer a {
+  color: var(--color-muted);
+}
+
+footer .footer-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-nav a {
+  text-decoration: none;
+}
+
+/* Small utility */
+.req {
+  color: var(--color-primary);
+  font-weight: 600;
+}
