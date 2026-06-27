@@ -88,69 +88,27 @@
 
       <form action="https://formspree.io/f/xojzwdge" method="POST">
         <div class="form-field">
-          <label for="name"
-            >Name <span class="req" aria-hidden="true">*</span></label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="name"
-            required
-          />
+          <input type="hidden" name="_subject" value="xSAR website message" />
+          <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name or organisation" required />
         </div>
 
         <div class="form-field">
-          <label for="email"
-            >Email <span class="req" aria-hidden="true">*</span></label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            required
-          />
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="Your email address will only be used for contacting" required />
         </div>
 
         <div class="form-field">
-          <label for="message"
-            >Message <span class="req" aria-hidden="true">*</span></label
-          >
-          <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required placeholder="Your feedback, questions or ideas" style="width: 100%"></textarea>
         </div>
 
-        <!-- Honeypot -->
-        <input
-          type="text"
-          name="_gotcha"
-          class="visually-hidden"
-          tabindex="-1"
-          aria-hidden="true"
-        />
-
-        <!-- Optional subject -->
-        <input type="hidden" name="_subject" value="xSAR website message" />
-
-        <!-- Cloudflare Turnstile (Formspree native integration) -->
-        <div
-          class="cf-turnstile"
-          data-sitekey="0x4AAAAAADpL_vxRXkUglyK-"
-          data-theme="light"
-        ></div>
+        <div class="cf-turnstile" style="margin: 1rem 0" data-sitekey="0x4AAAAAADpL_vxRXkUglyK-" data-theme="light"></div>
 
         <button type="submit" class="btn btn-primary">Send message</button>
       </form>
 
-      <p
-        style="
-          margin-top: 1.5rem;
-          font-size: 0.95rem;
-          color: var(--color-muted);
-        "
-      >
-        After sending we will communicate with you via email firstly. Thank you.
-      </p>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--color-muted);">After sending we will communicate with you via email firstly. Thank you.</p>
     </main>
 
     <footer>
@@ -159,14 +117,8 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <p>
-        xSAR supporting our heros of the Queensland and Northern Territory using
-        leading AI drone swarm technology.
-      </p>
-      <p>
-        © 2026 by xSAR a philanthropic project. Based in Toowoomba, Queensland.
-        All rights reserved.
-      </p>
+      <p>xSAR supporting our heroes of the Queensland and Northern Territory using leading AI drone swarm technology.</p>
+      <p>&copy; 2026 by xSAR a philanthropic project based in Toowoomba, Queensland. All rights reserved.</p>
     </footer>
   </body>
 </html>
