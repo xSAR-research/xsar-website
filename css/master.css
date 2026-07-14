@@ -416,3 +416,20 @@ footer .footer-nav a {
   color: var(--color-primary);
   font-weight: 600;
 }
+
+/* Particles background - full-screen behind everything */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;              /* sends it behind all content */
+  pointer-events: none;     /* clicks pass through */
+  overflow: hidden;
+}
+
+#particles-js canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
