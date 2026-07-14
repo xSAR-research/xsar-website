@@ -1,0 +1,43 @@
+{
+  "version": "0.2",
+  "import": [
+    "/home/charlie/.cspell.common.json"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    "**/dist",
+    "**/build",
+    "**/*.min.js"
+  ],
+  "words": [
+    "Formspree",
+    "Garreau",
+    "vincentgarreau"
+  ],
+  "languageSettings": [
+    {
+      "languageId": "rust",
+      "dictionaries": [
+        "rust",
+        "rust-crates"
+      ]
+    },
+    {
+      "languageId": "html",
+      "dictionaries": ["html", "css"]
+    },
+    {
+      "languageId": "css",
+      "dictionaries": ["css"]
+    },
+    {
+      "languageId": "javascript",
+      "dictionaries": ["javascript", "node", "npm"]
+    },
+    {
+      "languageId": "typescript",
+      "dictionaries": ["typescript", "node", "npm"]
+    }
+  ]
+}
