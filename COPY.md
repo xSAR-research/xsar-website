@@ -1,6 +1,6 @@
 # xSAR copy style guide
 
-Dev reference for user-facing copy on `index.html`, `about.html`, and `contact.html`. Shared chrome is duplicated across all three pages — apply every change in all files.
+Dev reference for user-facing copy on `index.html`, `about.html`, `supporters.html`, and `contact.html`. Shared chrome is duplicated across all pages — apply every change in all files.
 
 ## Geography
 
@@ -31,8 +31,15 @@ Dev reference for user-facing copy on `index.html`, `about.html`, and `contact.h
 
 ## Brand and HTML
 
-- Home `<title>`: `xSAR — Search And Respond`; subpages: `xSAR — About`, `xSAR — Contact`
+- Home `<title>`: `xSAR — Search And Respond`; subpages: `xSAR — About`, `xSAR — Supporters`, `xSAR — Contact`
 - `<html lang="en-AU">` on all pages
 - `og:image` path: `https://xsar.com.au/images/xsar-logo.png` (lowercase filename)
-- Per-page `og:url`: homepage, `/about.html`, `/contact.html` respectively
+- Per-page `og:url`: homepage, `/about.html`, `/supporters.html`, `/contact.html` respectively
 - Footer copyright: `by xSAR, a philanthropic project` (comma after xSAR)
+- Primary nav order: Home · About · Supporters · Contact (desktop + mobile + footer)
+
+## Supporters page
+
+- Layout: logo left, positive paragraph right (`.supporter` grid); stacks on small screens
+- Each entry: local logo asset under `images/`, external link with `rel="noopener noreferrer"`
+- Copy should thank the supporter for concrete help; stay warm and factual, not salesy
