@@ -1,6 +1,6 @@
 # xSAR copy style guide
 
-Dev reference for user-facing copy on `index.html`, `about.html`, `supporters.html`, and `contact.html`. Shared chrome is duplicated across all pages — apply every change in all files.
+Dev reference for user-facing copy on `index.html`, `progress.html`, `supporters.html`, `about.html`, and `contact.html`. Shared chrome is duplicated across all pages — apply every change in all files.
 
 ## Geography
 
@@ -28,15 +28,21 @@ Dev reference for user-facing copy on `index.html`, `about.html`, `supporters.ht
 - **multispectral** — one word
 - **bushfires** — one word (site-wide standard)
 - Australian English: honour, centre, organisation
+- Licence: **AGPL-3.0** / **GNU Affero General Public License version 3.0** in formal first mention
 
 ## Brand and HTML
 
-- Home `<title>`: `xSAR — Search And Respond`; subpages: `xSAR — About`, `xSAR — Supporters`, `xSAR — Contact`
+- Home `<title>`: `xSAR — Search And Respond`; subpages: `xSAR — Progress`, `xSAR — Supporters`, `xSAR — About`, `xSAR — Contact`
 - `<html lang="en-AU">` on all pages
 - `og:image` path: `https://xsar.com.au/images/xsar-logo.png` (lowercase filename)
-- Per-page `og:url`: homepage, `/about.html`, `/supporters.html`, `/contact.html` respectively
+- Per-page `og:url`: homepage, `/progress.html`, `/supporters.html`, `/about.html`, `/contact.html` respectively
 - Footer copyright: `by xSAR, a philanthropic project` (comma after xSAR)
-- Primary nav order: Home · About · Supporters · Contact (desktop + mobile + footer)
+- Primary nav order: Home · Progress · Supporters · About · Contact (desktop + mobile + footer)
+
+## Progress page
+
+- Two short paragraphs: open-source journey + AGPL-3.0; embedded firmware and Linux tools in Rust and Python
+- Primary CTA: `xSAR-Research` → `https://github.com/xSAR-research/` (`btn btn-primary`, `rel="noopener noreferrer"`)
 
 ## Supporters page
 

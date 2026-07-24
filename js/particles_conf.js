@@ -1,5 +1,5 @@
 /* particles.js background — Vincent Garreau particles.js (MIT)
-   Colours match site palette (terracotta / ochre).
+   Black interconnected nodes (swarm-like) on the warm cream page.
    Container is pointer-events: none so content stays clickable.
    https://github.com/VincentGarreau/particles.js
 */
@@ -30,27 +30,27 @@
     window.particlesJS('particles-js', {
       particles: {
         number: { value: 70, density: { enable: true, value_area: 800 } },
-        color: { value: '#C65D3B' },
+        color: { value: '#1a1a1a' },
         shape: {
           type: 'circle',
           stroke: { width: 0, color: '#000000' }
         },
         opacity: {
-          value: 0.55,
+          value: 0.45,
           random: true,
-          anim: { enable: false, speed: 1, opacity_min: 0.25, sync: false }
+          anim: { enable: false, speed: 1, opacity_min: 0.2, sync: false }
         },
         size: {
-          value: 4,
+          value: 3.5,
           random: true,
           anim: { enable: false, speed: 20, size_min: 1, sync: false }
         },
         line_linked: {
           enable: true,
           distance: 150,
-          color: '#E07A3D',
-          opacity: 0.4,
-          width: 1.2
+          color: '#000000',
+          opacity: 0.35,
+          width: 1.1
         },
         move: {
           enable: true,

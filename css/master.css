@@ -72,7 +72,8 @@ a:hover {
 
 /* 4. Layout — relative + z-index so content sits above #particles-js */
 header, main, footer {
-  max-width: 68rem;
+  /* max-width: 68rem; */
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 1.25rem;
   position: relative;
@@ -177,7 +178,7 @@ nav[aria-label="Primary"] {
 }
 
 .hero p {
-  max-width: 38rem;
+  /* max-width: 38rem; */
   font-size: 1.125rem;
   color: var(--color-muted);
   margin-bottom: 1.5rem;
@@ -442,7 +443,7 @@ button[type="submit"] {
 footer {
   border-top: 1px solid var(--color-border);
   padding-top: 1rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   font-size: 0.95rem;
   color: var(--color-muted);
 }
@@ -493,12 +494,95 @@ footer .footer-nav a {
   height: 100% !important;
 }
 
+/* Contact: photo left, bio right */
+.contact-profile {
+  display: grid;
+  grid-template-columns: minmax(10rem, 16rem) 1fr;
+  gap: 1.25rem 2rem;
+  align-items: start;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.contact-profile-photo {
+  margin: 0;
+  max-width: 16rem;
+}
+
+.contact-profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.contact-profile-photo figcaption {
+  margin-top: 0.5rem;
+  line-height: 1.35;
+}
+
+.contact-profile-name {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.2rem;
+}
+
+.contact-profile-intro {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.contact-profile-bio h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.contact-profile-bio ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--color-muted);
+}
+
+.contact-profile-bio li {
+  margin-bottom: 0.65rem;
+}
+
+.contact-profile-bio li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-profile-bio strong {
+  color: var(--color-text);
+}
+
+@media (max-width: 40em) {
+  .contact-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-profile-photo {
+    max-width: 14rem;
+  }
+}
+
 /* Supporter rows: logo left, positive copy right */
 .supporters-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 1.5rem;
+}
+
+.supporters-invite {
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .supporter {

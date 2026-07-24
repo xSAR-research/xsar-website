@@ -7,27 +7,27 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-0K0B5G9V87');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xSAR — Search And Respond</title>
+  <title>xSAR — Progress</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="description" content="xSAR — Search And Respond. AI-assisted autonomous drone support for emergency responders in Queensland and the Northern Territory. Human-in-the-loop oversight.">
+  <meta name="description" content="xSAR open-source progress — AGPL-3.0 licensed research toward embedded firmware and useful Linux tools in Rust and Python for search and rescue support.">
   <!-- OpenGraph / Social sharing -->
-  <meta property="og:title" content="xSAR — Search And Respond">
-  <meta property="og:description" content="Drone swarm research delivering situational awareness and support packages to help responders faster. For public benefit.">
+  <meta property="og:title" content="xSAR — Progress">
+  <meta property="og:description" content="Our open-source journey: AGPL-3.0 licensed work on embedded firmware and Linux tools built in Rust and Python.">
   <meta property="og:image" content="https://xsar.com.au/images/xsar-logo.png">
-  <meta property="og:url" content="https://xsar.com.au">
+  <meta property="og:url" content="https://xsar.com.au/progress.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
   <div id="particles-js" aria-hidden="true"></div>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -39,8 +39,8 @@
 
     <nav aria-label="Primary">
       <ul class="desktop-nav">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="progress.html">Progress</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="progress.html" aria-current="page">Progress</a></li>
         <li><a href="supporters.html">Supporters</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -49,8 +49,8 @@
       <details class="mobile-nav">
         <summary class="hamburger" aria-label="Toggle menu">☰</summary>
                 <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="progress.html">Progress</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="progress.html" aria-current="page">Progress</a></li>
           <li><a href="supporters.html">Supporters</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -60,35 +60,36 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <h1>Saving lives one drone at a time.</h1>
-      <p>xSAR researches AI-assisted autonomous drone swarms to extend situational awareness for rescuers in Queensland and the Northern Territory. When bushfires rage, floods rise, storms strike or people go missing, emergency services and the State Emergency Service (SES) answer the call with local knowledge and steady hands. We work in the background to deliver practical swarm support that might stand beside them on the ground—always with human-in-the-loop oversight.</p>
+    <h1>Progress</h1>
 
-      <div class="hero-actions">
-        <a href="about.html" class="btn btn-primary">Information for decision makers</a>
-        <a href="contact.html" class="btn btn-secondary">Contact the team</a>
-      </div>
-    </section>
+    <p>
+      xSAR is on an open-source journey. We are moving our code under the
+      <strong>GNU Affero General Public License version 3.0 (AGPL-3.0)</strong>
+      so that research, field experiments and improvements stay available to the
+      communities that need them. Publishing under a strong copyleft licence
+      keeps the work free to study and adapt while ensuring that changes made
+      for real deployments can flow back to everyone building quieter support
+      for emergency services and the State Emergency Service (SES).
+    </p>
 
-    <section>
-      <h2>How we try to help</h2>
-      <p>Autonomous drone swarms give ground teams an extra set of eyes over wide or difficult country. Multispectral and thermal imaging can detect a heat signature when visibility is poor, so searchers spend more time where it matters and less time exposed.</p>
+    <p>
+      Our target is practical kit for the edge: <strong>embedded firmware</strong>
+      that can live on small devices in the field, and <strong>useful Linux tools</strong>
+      written mainly in <strong>Rust</strong> and <strong>Python</strong> for reliable
+      automation, sensing and mesh-aware workflows. Progress is measured in working
+      software and honest documentation—not slide decks. As repositories mature,
+      they appear under the public organisation so others can follow along, file
+      issues, and reuse what helps rescuers on the ground.
+    </p>
 
-      <div class="cards">
-        <div class="card">
-          <h3>Eyes in the sky</h3>
-          <p>Coordinated drone swarms scan large areas quickly and stream live situational awareness back to mobile command.</p>
-        </div>
-        <div class="card">
-          <h3>Safer for everyone</h3>
-          <p>Operate in conditions where manned aircraft or foot teams would be delayed or at greater risk.</p>
-        </div>
-        <div class="card">
-          <h3>Quiet support</h3>
-          <p>We're at the forefront of AI-assisted swarm technology, with human-in-the-loop safety, oversight and control.</p>
-        </div>
-      </div>
-    </section>
+    <div class="hero-actions" style="margin-top: 1.5rem;">
+      <a
+        href="https://github.com/xSAR-research/"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >xSAR-Research</a>
+    </div>
   </main>
 
   <footer>

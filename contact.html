@@ -41,17 +41,19 @@
     <nav aria-label="Primary">
       <ul class="desktop-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="progress.html">Progress</a></li>
         <li><a href="supporters.html">Supporters</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
 
       <details class="mobile-nav">
         <summary class="hamburger" aria-label="Toggle menu">☰</summary>
-        <ul>
+                <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="progress.html">Progress</a></li>
           <li><a href="supporters.html">Supporters</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </details>
@@ -68,24 +70,45 @@
       Please share your thoughts or contact us if you want more information on this life-saving project.
     </p>
 
-    <figure style="max-width: 260px; margin: 1.25rem 0">
-      <img
-        src="images/Charlie.png"
-        alt="Warm portrait of Charlie, a man with a full grey beard and short receding hair, smiling gently while wearing a brown and white checkered shirt. A small drone is visible through the window in the background."
-        width="260"
-        height="260"
-        style="border-radius: 6px; border: 1px solid var(--color-border)"
-      />
-      <figcaption
-        style="
-          font-size: 0.9rem;
-          color: var(--color-muted);
-          margin-top: 0.35rem;
-        "
-      >
-        Charlie — Toowoomba
-      </figcaption>
-    </figure>
+    <section class="contact-profile" aria-labelledby="background-expertise">
+      <figure class="contact-profile-photo">
+        <img
+          src="images/Charlie.png"
+          alt="Charlie - System engineer with 45 years of development experience"
+          width="260"
+          height="260"
+        >
+        <figcaption>
+          <span class="contact-profile-name">Charlie</span>
+          <span class="contact-profile-intro">From the bush, to the city, now based in Toowoomba, Queensland.</span>
+          <span class="contact-profile-intro">Happy to talk through ideas and always looking for supporters.</span>
+        </figcaption>
+      </figure>
+      <div class="contact-profile-bio">
+        <h2 id="background-expertise">Background &amp; expertise</h2>
+        <ul>
+          <li>
+            <strong>Experience:</strong> More than 45 years building and running systems—from early machine code
+            on the VIC-20 through bare-metal and embedded work to enterprise-grade platforms. The thread is the
+            same: careful engineering that holds up when the environment is unforgiving.
+          </li>
+          <li>
+            <strong>Certifications:</strong> MCSA and MCSD (Microsoft Certified Systems Architect and Solutions
+            Developer), grounding long practice in formal systems and solution design.
+          </li>
+          <li>
+            <strong>RF / electronics:</strong> Advanced Amateur Radio Licence holder for over 45 years. Hands-on
+            experience with RF propagation, electronics, and hardware-level electrical engineering—skills that sit
+            naturally beside field radios, sensors, and low-power devices.
+          </li>
+          <li>
+            <strong>Approach:</strong> Comfortable moving between circuit boards and large deployments. Prefers
+            proven, maintainable designs over fashion-driven stacks, and keeps the focus on tools that quietly help
+            people who work under pressure.
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <form action="https://formspree.io/f/xojzwdge" method="POST">
       <div class="form-field">
@@ -115,8 +138,9 @@
   <footer>
     <nav class="footer-nav" aria-label="Footer">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="progress.html">Progress</a>
       <a href="supporters.html">Supporters</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p>xSAR supporting our heroes in Queensland and the Northern Territory using leading AI drone swarm technology.</p>
