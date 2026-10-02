@@ -18,7 +18,7 @@ Dev reference for user-facing copy on `index.html`, `progress.html`, `supporters
 
 ## Tone
 
-- **Tech-forward, rescuer-first** — lead with what responders do; tie xSAR to AI-assisted autonomous drone swarms, situational awareness, multispectral/thermal sensing, and mesh communications
+- **Tech-forward, responder-first** — lead with what responders do; tie xSAR to AI-assisted autonomous drone swarms, situational awareness, multispectral/thermal sensing, and mesh communications
 - Stay humble: xSAR works in the background; volunteers and communities come first
 - Align body copy with meta/footer language (drone swarm, human-in-the-loop oversight)
 
@@ -32,7 +32,7 @@ Dev reference for user-facing copy on `index.html`, `progress.html`, `supporters
 
 ## Brand and HTML
 
-- Home `<title>`: `xSAR — Search And Respond`; subpages: `xSAR — Progress`, `xSAR — Supporters`, `xSAR — About`, `xSAR — Contact`
+- Home `<title>`: `xSAR — Search Assess Respond`; subpages: `xSAR — Progress`, `xSAR — Supporters`, `xSAR — About`, `xSAR — Contact`
 - `<html lang="en-AU">` on all pages
 - `og:image` path: `https://xsar.com.au/images/xsar-logo.png` (lowercase filename)
 - Per-page `og:url`: homepage, `/progress.html`, `/supporters.html`, `/about.html`, `/contact.html` respectively
