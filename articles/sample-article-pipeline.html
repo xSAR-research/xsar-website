@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K0B5G9V87"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0K0B5G9V87');</script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xSAR — Sample:
+How xSAR Articles Are Built</title>
+  <link rel="stylesheet" href="../css/master.css"><link rel="stylesheet" href="../css/articles.css"><link rel="icon" type="image/x-icon" href="../favicon.ico"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest">
+  <meta name="description" content="A test article that exercises every
+Markdown feature the xSAR article pipeline supports, including
+build-time maths."><meta property="og:title" content="Sample: How xSAR
+Articles Are Built"><meta property="og:description" content="A test
+article that exercises every Markdown feature the xSAR article pipeline
+supports, including build-time
+maths."><meta property="og:image" content="https://xsar.com.au/images/xsar-logo.png"><meta property="og:url" content="https://xsar.com.au/articles/sample-article-pipeline.html"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body><div id="particles-js" aria-hidden="true"></div><a href="#main" class="skip-link">Skip to main content</a>
+<header><a href="../index.html" class="logo"><img src="../images/xsar-logo.png" alt="xSAR" width="140" height="70"></a><nav aria-label="Primary"><ul class="desktop-nav"><li><a href="../index.html">Home</a></li><li><a href="../progress.html">Progress</a></li><li><a href="../open-source.html">Open Source</a></li><li><a href="index.html">Articles</a></li><li><a href="../supporters.html">Supporters</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul><details class="mobile-nav"><summary class="hamburger" aria-label="Toggle menu">☰</summary><ul><li><a href="../index.html">Home</a></li><li><a href="../progress.html">Progress</a></li><li><a href="../open-source.html">Open Source</a></li><li><a href="index.html">Articles</a></li><li><a href="../supporters.html">Supporters</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></details></nav></header>
+<main id="main">
+<article class="article">
+<h1>Sample: How xSAR Articles Are Built</h1>
+<p class="article-meta"><time datetime="2026-10-18">18 October
+2026</time></p>
+<p>This page is a <strong>sample</strong>. It exists to prove the
+pipeline end to end: Markdown in, a standard HTML5 page out, with <em>no
+JavaScript</em> needed for the maths and <u>an underline</u> where it
+helps.</p>
+<h2 id="why-search-theory-needs-maths">Why search theory needs
+maths</h2>
+<p>A classic result in search theory is Koopman’s <em>random search</em>
+formula. With sweep width
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>,
+track length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+and search area
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+the coverage is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mfrac><mrow><mi>W</mi><mi>L</mi></mrow><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">c = \frac{WL}{A}</annotation></semantics></math>
+and the probability of detection is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">D</mi></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>W</mi><mi>L</mi><mi>/</mi><mi>A</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+\mathrm{POD} = 1 - e^{-WL/A}
+</annotation></semantics></math></p>
+<p>Summing over segments
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>,
+the overall probability of success is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">S</mi></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">A</mi></mrow><mi>i</mi></msub><mo>×</mo><msub><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">D</mi></mrow><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+\mathrm{POS} = \sum_{i=1}^{n} \mathrm{POA}_i \times \mathrm{POD}_i
+</annotation></semantics></math></p>
+<hr />
+<h3 id="supported-formatting">Supported formatting</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Markdown</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bold</td>
+<td><code>**bold**</code></td>
+<td><strong>bold</strong></td>
+</tr>
+<tr>
+<td>Italics</td>
+<td><code>*italics*</code></td>
+<td><em>italics</em></td>
+</tr>
+<tr>
+<td>Underline</td>
+<td><code>[text]{.underline}</code></td>
+<td><u>text</u></td>
+</tr>
+<tr>
+<td>Link</td>
+<td><code>[xSAR](https://xsar.com.au/)</code></td>
+<td><a href="https://xsar.com.au/">xSAR</a></td>
+</tr>
+<tr>
+<td>Inline maths</td>
+<td><code>$e^{i\pi} + 1 = 0$</code></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e^{i\pi} + 1 = 0</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<h4 id="an-image">An image</h4>
+<figure>
+<img src="../images/xsar-logo.png" width="140" alt="The xSAR logo" />
+<figcaption aria-hidden="true">The xSAR logo</figcaption>
+</figure>
+<p>That’s everything: headers, a horizontal rule, <strong>bold</strong>,
+<em>italics</em>, <u>underline</u>, <a
+href="https://x.com/xSAR_Research">links</a>, a table, an image, inline
+maths like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha + \beta</annotation></semantics></math>
+and display maths.</p>
+</article>
+<p class="article-back"><a href="index.html">← All articles</a></p>
+</main>
+<footer><nav class="footer-nav" aria-label="Footer"><a href="../index.html">Home</a><a href="../progress.html">Progress</a><a href="../open-source.html">Open Source</a><a href="index.html">Articles</a><a href="../supporters.html">Supporters</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><p>xSAR supporting emergency responders through practical, open engineering.</p><p>&copy; 2026 by xSAR, a philanthropic project based in Toowoomba, Queensland. All rights reserved.</p></footer><script src="../js/particles_min.js" defer></script><script src="../js/particles_conf.js" defer></script></body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K0B5G9V87"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0K0B5G9V87');</script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xSAR — $pagetitle$</title>
+  <link rel="stylesheet" href="../css/master.css"><link rel="stylesheet" href="../css/articles.css"><link rel="icon" type="image/x-icon" href="../favicon.ico"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest">
+  <meta name="description" content="$description$"><meta property="og:title" content="$pagetitle$"><meta property="og:description" content="$description$"><meta property="og:image" content="https://xsar.com.au/images/xsar-logo.png"><meta property="og:url" content="https://xsar.com.au/articles/$outfile$"><meta property="og:type" content="$if(is_index)$website$else$article$endif$"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body><div id="particles-js" aria-hidden="true"></div><a href="#main" class="skip-link">Skip to main content</a>
+<header><a href="../index.html" class="logo"><img src="../images/xsar-logo.png" alt="xSAR" width="140" height="70"></a><nav aria-label="Primary"><ul class="desktop-nav"><li><a href="../index.html">Home</a></li><li><a href="../progress.html">Progress</a></li><li><a href="../open-source.html">Open Source</a></li><li><a href="index.html"$if(is_index)$ aria-current="page"$endif$>Articles</a></li><li><a href="../supporters.html">Supporters</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul><details class="mobile-nav"><summary class="hamburger" aria-label="Toggle menu">☰</summary><ul><li><a href="../index.html">Home</a></li><li><a href="../progress.html">Progress</a></li><li><a href="../open-source.html">Open Source</a></li><li><a href="index.html"$if(is_index)$ aria-current="page"$endif$>Articles</a></li><li><a href="../supporters.html">Supporters</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></details></nav></header>
+<main id="main">
+$if(is_index)$
+<h1>$title$</h1>
+$body$
+$else$
+<article class="article">
+<h1>$title$</h1>
+<p class="article-meta"><time datetime="$date$">$date_display$</time>$if(x_url)$ · <a href="$x_url$" target="_blank" rel="noopener noreferrer">Read on X</a>$endif$</p>
+$body$
+</article>
+<p class="article-back"><a href="index.html">← All articles</a></p>
+$endif$
+</main>
+<footer><nav class="footer-nav" aria-label="Footer"><a href="../index.html">Home</a><a href="../progress.html">Progress</a><a href="../open-source.html">Open Source</a><a href="index.html">Articles</a><a href="../supporters.html">Supporters</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><p>xSAR supporting emergency responders through practical, open engineering.</p><p>&copy; 2026 by xSAR, a philanthropic project based in Toowoomba, Queensland. All rights reserved.</p></footer><script src="../js/particles_min.js" defer></script><script src="../js/particles_conf.js" defer></script></body></html>

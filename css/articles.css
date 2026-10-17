@@ -1,0 +1,19 @@
+/* xSAR — articles.css: extras for generated article pages (articles/*.html).
+   Loaded after master.css; only styles elements master.css does not cover. */
+.article { max-width: 48rem; }
+.article-meta { color: var(--color-muted); font-size: 0.95rem; }
+.article img { max-width: 100%; height: auto; }
+.article figure { margin: 1.5rem 0; }
+.article figcaption { color: var(--color-muted); font-size: 0.9rem; }
+.article hr { border: 0; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+.article table { border-collapse: collapse; margin: 1rem 0 1.5rem; width: 100%; background: var(--color-surface); }
+.article th, .article td { border: 1px solid var(--color-border); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+.article thead th { background: var(--color-bg); }
+.article pre { overflow-x: auto; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 0.75rem; }
+.article math[display="block"] { display: block; overflow-x: auto; overflow-y: hidden; margin: 1rem 0; padding: 0.25rem 0; font-size: 1.15em; }
+.article-list { list-style: none; padding: 0; max-width: 48rem; }
+.article-list li { padding: 1rem 0; border-bottom: 1px solid var(--color-border); }
+.article-list h2 { margin-bottom: 0.25rem; }
+.article-list time { color: var(--color-muted); font-size: 0.95rem; }
+.article-list p { margin: 0.25rem 0 0; }
+.article-back { margin-top: 2rem; }

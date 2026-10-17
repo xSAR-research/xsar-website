@@ -1,0 +1,8 @@
+# Expected tool versions for byte-identical builds (target: Arch Linux "beast").
+# ./build.sh warns on any mismatch; ./build.sh --strict fails instead.
+# After upgrading tools on purpose, run ./build.sh --record-versions and commit.
+pandoc 3.11
+texlive 2026
+dvisvgm 3.6.1
+resvg 0.48.1
+oxipng 10.2.1

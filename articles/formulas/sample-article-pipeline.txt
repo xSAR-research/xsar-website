@@ -1,0 +1,31 @@
+Formulas for sample-article-pipeline (Sample: How xSAR Articles Are Built)
+Upload each PNG to the X article where that formula appears, in this order.
+Short inline formulas can usually just be typed as text on X; display formulas are the ones that need images.
+
+1. inline  articles/formulas/f23850632b02ecccae23a684d77edda952fcb4388a19903c66565e50d36a303f.png
+     W
+
+2. inline  articles/formulas/a43cb36f9fac2fbcd9f951c6b0f6f99f64f41ec6a386c5663afa6bc261c5a4bd.png
+     L
+
+3. inline  articles/formulas/fb8a95ba0d153ba54c7301dce0e40e03b80cbb848752108fbe8709d2525fa411.png
+     A
+
+4. inline  articles/formulas/27b6386c3ce08159c50bf5c6e95723beea4829a415d15cef3b8b91d80f1af8df.png
+     c = \frac{WL}{A}
+
+5. display  articles/formulas/d589906c224d6b9181e271982486b7adfcf2fcb4b67d595cc3f96950f8983c87.png
+     \mathrm{POD} = 1 - e^{-WL/A}
+
+6. inline  articles/formulas/6c146958e63a8198b51edc0569db467118af60be03ac3d5be1a4d08c441d23cb.png
+     i
+
+7. display  articles/formulas/04dd04b4e3f93c2ee777c8774a5c6a43c75db751b257d7863b35a1a847783065.png
+     \mathrm{POS} = \sum_{i=1}^{n} \mathrm{POA}_i \times \mathrm{POD}_i
+
+8. inline  articles/formulas/effd052fc6996f0fe1baa91d7153995136d322ffce85900730d8f28e466b464b.png
+     e^{i\pi} + 1 = 0
+
+9. inline  articles/formulas/964a4cf1301094b4113ceab0055de7d453d484c96395e0b7c05cdfee664586dc.png
+     \alpha + \beta
+
